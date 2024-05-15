@@ -1,0 +1,43 @@
+nav{
+    width: 100%;
+    color: #fff;
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 50;
+}
+
+.logo {
+    height: 100px;
+    width: 200px;
+    margin-left: 0;
+    color: #fff;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    object-fit: cover;
+}
+
+nav ul li{
+    border: #F9F7C9;
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 16px;
+}
+
+.btn{
+    background-color: #F9F7C9;
+}
+.dark-nav{
+    background: #706233;
+    transition: 0.5s;
+}
+
+.our-member-btn {
+    background-color: #F9F7C9;
+  }
+  
