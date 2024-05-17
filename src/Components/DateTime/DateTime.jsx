@@ -1,9 +1,26 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const Weather = () => {
-  const [weatherData, setWeatherData] = useState(null);
+const DateTime = () => {
+  const [dateTime, setDateTime] = useState("");
   const [error, setError] = useState(null);
+  const [weatherData, setWeatherData] = useState(null);
+
+  useEffect(() => {
+    const fetchDateTime = async () => {
+      try {
+        const response = await axios.get(
+          "http://worldtimeapi.org/api/timezone/Asia/Makassar"
+        );
+        setDateTime(response.data.datetime);
+      } catch (error) {
+        setError(error);
+        console.error("Error fetching date and time:", error);
+      }
+    };
+
+    fetchDateTime();
+  }, []);
 
   useEffect(() => {
     const fetchWeather = async () => {
@@ -24,26 +41,18 @@ const Weather = () => {
   return (
     <div className="p-4 w-full flex justify-center flex-wrap">
       <h1 className="text-2xl font-bold mb-4 w-full text-center">
-        Current Weather
+        Current Date and Time in Sulawesi Tengah
       </h1>
       {error && (
         <p className="text-red-500">
-          Error fetching weather data: {error.message}
+          Error fetching date and time: {error.message}
         </p>
       )}
-      {weatherData && (
-        <div className="card">
-          <h2>{weatherData.location.region}</h2>
-          <p>Temperature: {weatherData.current.temp_c}°C</p>
-          <p>Condition: {weatherData.current.condition.text}</p>
-          <img
-            src={weatherData.current.condition.icon}
-            alt={weatherData.current.condition.text}
-          />
-        </div>
+      {!error && dateTime && (
+        <p className="text-xl">{new Date(dateTime).toLocaleString()}</p>
       )}
     </div>
   );
 };
 
-export default Weather;
+export default DateTime;

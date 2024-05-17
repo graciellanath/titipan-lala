@@ -17,6 +17,8 @@ import Culinary from "./Components/Culinary/Culinary";
 import Footer from "./Components/Footer/Footer";
 import Map from "./Components/Map/Map";
 import Lambang from "./Components/Lambang/Lambang";
+import DateTime from "./Components/DateTime/DateTime";
+import DateTimeWeather from "./Components/DateTimeWeather/DateTimeWeather";
 
 const App = () => {
   return (
@@ -25,15 +27,14 @@ const App = () => {
       <Hero />
       <div className="w-full flex justify-center flex-wrap">
         <About />
+        <DateTimeWeather />
+        <Map />
         <Title />
         <Swiper />
         <Title3 />
         <CulinarySwiper />
-        {/* <Weather/> */}
-        <Area/>
-        <Map/>
-        {/* <Lambang/> */}
-        <Title2/>
+        <Area />
+        <Title2 />
         <OurMember />
         <Footer />
       </div>

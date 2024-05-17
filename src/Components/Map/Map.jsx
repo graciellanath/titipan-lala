@@ -40,7 +40,7 @@ const Map = () => {
   return (
     <div className="p-4 w-full flex justify-center flex-wrap">
       <h1 className="text-2xl font-bold mb-4 w-full text-center">
-        GeoJSON Map
+        Interactive Map Of Sulawesi Tengah
       </h1>
       {error && (
         <p className="text-red-500">

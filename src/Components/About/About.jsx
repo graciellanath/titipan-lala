@@ -1,16 +1,25 @@
-import React from 'react'
-import './About.css'
-import about_img from '../../assets/about.png'
-import play_icon from '../../assets/play_icon.png'
+import React, { useEffect } from 'react';
+import './About.css';
+import about_img from '../../assets/about.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 4000, 
+      once: false, 
+      offset: 300, 
+    });
+  }, []);
+
   return (
-    <div className='about flex align-middle items-center justify-end flex-wrap w-full bg-[#706233] drop-shadow-lg shadow-[#695b30] m-6 md:my-12 md:mx-52 relative overflow-hidden rounded-2xl'>
-      {/* <img src={about_img} alt="" className='absolute -z-0 -top-20 start-0 h-[150%]' />
-      <div className='absolute z-0 top-0 start-0 h-full bg-gradient-to-r from-transparent to-[#706233] w-1/2'></div> */}
+    <div 
+      className='about flex align-middle items-center justify-end flex-wrap w-full bg-[#A9B388] drop-shadow-lg shadow-[#695b30] m-6 md:my-12 md:mx-52 relative overflow-hidden rounded-2xl'
+      data-aos="fade-up" 
+    >
       <div className='about-left md:w-[35%] w-full flex justify-center my-4'>
         <img src={about_img} alt="" className='about-img md:w-full justify-center px-4 md:h-96 object-fit' />
-        {/* <img src={play_icon} alt="" className='play-icon' /> */}
       </div>
       <div className='about-right md:w-[65%] w-full text-center z-10'>
         <h1 className='font-bold text-[24px] text-white'>About Central Sulawesi</h1>
@@ -21,4 +30,4 @@ const About = () => {
   )
 }
 
-export default About
+export default About;

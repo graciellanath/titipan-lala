@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import './Area.css'; 
 
 const Area = () => {
   const [areaData, setAreaData] = useState([]);
@@ -28,7 +29,7 @@ const Area = () => {
 
   return (
     <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4 text-center">Areas of Sulawesi Tengah</h1>
+      <h1 className="text-2xl font-bold mb-4 text-center text-[#5F6F52]">Areas of Sulawesi Tengah</h1>
       {error && (
         <p className="text-red-500">
           Error fetching weather data: {error.message}
@@ -37,13 +38,10 @@ const Area = () => {
       {areaData.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {areaData.map((item, index) => (
-            <div key={index} className="card bg-white shadow-md rounded-lg p-6">
+            <div key={index} className="card">
               <h2 className="text-xl font-semibold mb-2">{item.name[0]}</h2>
               <h3 className="text-lg font-medium mb-2">{item.name[1]}</h3>
-              <p className="text-gray-700 mb-1">
-                Description: {item.description}
-              </p>
-              <p className="text-gray-700 mb-1">Type: {item.type}</p>
+              <p className="text-gray-700 mb-1">Type: {item.type.toUpperCase()}</p>
               <p className="text-gray-700 mb-1">
                 Coordinates: {item.coordinate}
               </p>

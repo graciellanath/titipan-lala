@@ -1,5 +1,5 @@
 import React from "react";
-import "./Destination3.css";
+import "./Destination.css";
 import kalamata from "../../assets/kalamata.png";
 import nomoni from "../../assets/nomoni.png";
 import malenge from "../../assets/malenge.png";

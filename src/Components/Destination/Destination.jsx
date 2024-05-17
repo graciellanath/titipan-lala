@@ -18,13 +18,13 @@ const DestinationCards = () => {
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               {/* Card 1 */}
-              <div className="destination-card">
+              <div className="destination-card relative overflow-hidden">
                 <img
                   src={banggai}
                   alt="Destination 1"
-                  className="destination-image"
+                  className="destination-image" 
                 />
-                <div className="destination-info">
+                <div className="destination-info absolute top-0 w-full h-full bg-black bg-opacity-60 text-white opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
                   <h2>Lake Paisu Pok Luk Panenteng</h2>
                   <p>
                     Sparkling amidst the Banggai Islands of Central Sulawesi, it
@@ -36,13 +36,13 @@ const DestinationCards = () => {
             </div>
             <div class="swiper-slide">
               {/* Card 2 */}
-              <div className="destination-card">
+              <div className="destination-card relative overflow-hidden">
                 <img
                   src={pantai}
                   alt="Destination 2"
                   className="destination-image"
                 />
-                <div className="destination-info">
+                <div className="destination-info absolute top-0 w-full h-full bg-black bg-opacity-60 text-white opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
                   <h2>Tanjung Karang Beach</h2>
                   <p>
                     A tropical paradise in Central Sulawesi that offers pristine
@@ -54,13 +54,13 @@ const DestinationCards = () => {
             </div>
             <div class="swiper-slide">
               {/* Card 3 */}
-              <div className="destination-card">
+              <div className="destination-card relative overflow-hidden">
                 <img
                   src={danau}
                   alt="Destination 3"
                   className="destination-image"
                 />
-                <div className="destination-info">
+                <div className="destination-info absolute top-0 w-full h-full bg-black bg-opacity-60 text-white opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
                   <h2>Lake Poso</h2>
                   <p>
                     A blue gem in the heart of Central Sulawesi, captivating
@@ -71,13 +71,13 @@ const DestinationCards = () => {
               </div>
             </div>
             <div class="swiper-slide">
-              <div className="destination-card">
+              <div className="destination-card relative overflow-hidden">
                 <img
                   src={lorelindu}
                   alt="Destination 1"
                   className="destination-image"
                 />
-                <div className="destination-info">
+                <div className="destination-info absolute top-0 w-full h-full bg-black bg-opacity-60 text-white opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
                   <h2>The Lore Lindu National Park</h2>
                   <p>
                     Extraordinary biodiversity, presenting the majestic blend of
@@ -89,13 +89,13 @@ const DestinationCards = () => {
             </div>
             <div class="swiper-slide">
               {/* Card 2 */}
-              <div className="destination-card">
+              <div className="destination-card relative overflow-hidden">
                 <img
                   src={saluopa}
                   alt="Destination 2"
                   className="destination-image"
                 />
-                <div className="destination-info">
+                <div className="destination-info absolute top-0 w-full h-full bg-black bg-opacity-60 text-white opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
                   <h2>The Saluopa Waterfall </h2>
                   <p>
                     Captivates with its stunning natural charm, as its water
@@ -107,13 +107,13 @@ const DestinationCards = () => {
             </div>
             <div class="swiper-slide">
               {/* Card 3 */}
-              <div className="destination-card">
+              <div className="destination-card relative overflow-hidden">
                 <img
                   src={tomini}
                   alt="Destination 3"
                   className="destination-image"
                 />
-                <div className="destination-info">
+                <div className="destination-info absolute top-0 w-full h-full bg-black bg-opacity-60 text-white opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
                   <h2>The Tomini Bay</h2>
                   <p>
                     The endless beauty of its sea and its enchanting beaches
@@ -124,13 +124,13 @@ const DestinationCards = () => {
               </div>
             </div>
             <div class="swiper-slide">
-              <div className="destination-card">
+              <div className="destination-card relative overflow-hidden">
                 <img
                   src={kalamata}
                   alt="Destination 1"
                   className="destination-image"
                 />
-                <div className="destination-info">
+                <div className="destination-info absolute top-0 w-full h-full bg-black bg-opacity-60 text-white opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
                   <h2>Kalamata Fort</h2>
                   <p>
                     A silent witness to past struggles, captivating with its
@@ -142,13 +142,13 @@ const DestinationCards = () => {
             </div>
             <div class="swiper-slide">
               {/* Card 2 */}
-              <div className="destination-card">
+              <div className="destination-card relative overflow-hidden">
                 <img
                   src={nomoni}
                   alt="Destination 2"
                   className="destination-image"
                 />
-                <div className="destination-info">
+                <div className="destination-info absolute top-0 w-full h-full bg-black bg-opacity-60 text-white opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
                   <h2>Nomoni Waterfall </h2>
                   <p>
                     The stunning natural beauty, with its cascading waters from
@@ -160,13 +160,13 @@ const DestinationCards = () => {
             </div>
             <div class="swiper-slide">
               {/* Card 3 */}
-              <div className="destination-card">
+              <div className="destination-card relative overflow-hidden">
                 <img
                   src={malenge}
                   alt="Destination 3"
                   className="destination-image"
                 />
-                <div className="destination-info">
+                <div className="destination-info absolute top-0 w-full h-full bg-black bg-opacity-60 text-white opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out">
                   <h2>Malenge Island</h2>
                   <p>
                     Explore the hidden wonders beneath its waters and relax on

@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 
 function Footer() {
   return (
-    <div class="bg-[#12372A] p-4 pb-8 w-full mt-10">
+    <div class="bg-[#5F6F52] p-4 pb-8 w-full mt-10">
       <div class="mt-5 flex flex-col md:items-center md:flex-row md:justify-around md:text-left md:space-y-0  xl:flex-row xl:items-center justify-between mx-auto">
         <div class="mb-4 px-4 md:px-0 md:mb-0">
           <img src={logo} alt="logo" class="h-48 w-full object-cover mt-1 mx-auto invert" />
@@ -89,36 +89,7 @@ function Footer() {
           </div>
         </div>
 
-        <div class="mb-4 px-4 md:px-0 md:mb-0">
-          <p class="mb-1 font-bold text-[#ffffff] text-lg md:text-xl">
-            Contact Us
-          </p>
-          <div class="">
-            <a
-              target="_"
-              href="https://www.instagram.com/"
-              class="text-black no-underline"
-            >
-              <div class="flex">
-                <p class="text-[#ffffff] no-underline hover:text-[#a0a0a0]  text-base">
-                  Instagram
-                </p>
-              </div>
-            </a>
-
-            <a
-              target="_"
-              href="https://twitter.com/"
-              class="text-black no-underline"
-            >
-              <div class="flex">
-                <p class="text-[#ffffff] no-underline hover:text-[#a0a0a0] text-base">
-                  Twitter
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
+        
       </div>
     </div>
   );

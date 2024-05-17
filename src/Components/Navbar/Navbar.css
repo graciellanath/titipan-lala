@@ -1,4 +1,4 @@
-nav{
+nav {
     width: 100%;
     color: #fff;
     padding: 4px 0;
@@ -9,6 +9,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     z-index: 50;
+    transition: background 0.5s;
 }
 
 .logo {
@@ -16,12 +17,34 @@ nav{
     width: 200px;
     margin-left: 0;
     color: #fff;
-    -webkit-filter: invert(100%);
     filter: invert(100%);
     object-fit: cover;
 }
 
-nav ul li{
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-icon .bar1,
+.menu-icon .bar2,
+.menu-icon .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
     border: #F9F7C9;
     display: inline-block;
     list-style: none;
@@ -29,15 +52,55 @@ nav ul li{
     font-size: 16px;
 }
 
-.btn{
+.btn {
     background-color: #F9F7C9;
 }
-.dark-nav{
-    background: #706233;
-    transition: 0.5s;
+
+.dark-nav {
+    background: #5F6F52;
 }
 
 .our-member-btn {
     background-color: #F9F7C9;
-  }
-  
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.5s ease;
+        background-color: #5F6F52;
+    }
+
+    .nav-links.nav-active {
+        display: flex;
+        left: 0;
+        opacity: 1;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px 0;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .menu-icon.open .bar1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-icon.open .bar2 {
+        opacity: 0;
+    }
+
+    .menu-icon.open .bar3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
