@@ -10,7 +10,7 @@ const DateTimeWeather = () => {
     const fetchDateTime = async () => {
       try {
         const response = await axios.get(
-          "http://worldtimeapi.org/api/timezone/Asia/Makassar"
+          "https://worldtimeapi.org/api/timezone/Asia/Makassar"
         );
         setDateTime(response.data.datetime);
       } catch (error) {
