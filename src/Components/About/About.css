@@ -1,9 +1,8 @@
 .about {
-    opacity: 0; 
-    transition: opacity 1.7s ease-in-out; 
-  }
-  
-  .aos-animate .about {
-    opacity: 1; 
-  }
-  
+  opacity: 0;
+  transition: opacity 1.7s ease-in-out;
+}
+
+.aos-animate .about {
+  opacity: 1;
+}

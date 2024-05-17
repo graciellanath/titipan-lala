@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 
 function Footer() {
   return (
-    <div class="bg-[#5F6F52] p-4 pb-8 w-full mt-10">
+    <div class="bg-[#434f3a] p-4 pb-8 w-full mt-10">
       <div class="mt-5 flex flex-col md:items-center md:flex-row md:justify-around md:text-left md:space-y-0  xl:flex-row xl:items-center justify-between mx-auto">
         <div class="mb-4 px-4 md:px-0 md:mb-0">
           <img src={logo} alt="logo" class="h-48 w-full object-cover mt-1 mx-auto invert" />

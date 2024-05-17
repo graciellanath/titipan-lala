@@ -13,7 +13,7 @@ const Lambang = () => {
           { length: 13 },
           (_, i) => 418 + i
         ).map(
-          (id) => axios.get(`/api/regencies/${id}/200`) // Use the proxy path
+          (id) => axios.get(`/api/regencies/${id}/200`) 
         );
         const regencyResults = await Promise.all(regencyRequests);
         console.log(regencyResults);
@@ -26,7 +26,7 @@ const Lambang = () => {
 
     const fetchProvinceData = async () => {
       try {
-        const response = await axios.get(`/api/provinces/27/200`); // Use the proxy path
+        const response = await axios.get(`/api/provinces/27/200`); 
         setProvinceData(response.data);
       } catch (error) {
         setError(error);
@@ -49,7 +49,7 @@ const Lambang = () => {
         {provinceData && (
           <div className="card">
             <h3>{provinceData.name}</h3>
-            {/* Display other fields as necessary */}
+            {}
           </div>
         )}
       </div>
@@ -58,7 +58,7 @@ const Lambang = () => {
         {regenciesData.map((item, index) => (
           <div key={index} className="card">
             <h3>{item.name}</h3>
-            {/* Display other fields as necessary */}
+            {}
           </div>
         ))}
       </div>

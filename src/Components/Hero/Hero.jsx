@@ -10,7 +10,7 @@ const Hero = () => {
       <div className='hero-text text-center px-10'>
         <h1 className='text-6xl font-bold'>Unveiling Central Sulawesi</h1>
         <p className='max-w-[700px] text-xl m-[10px] leading-normal'>Your Gateway To Central Sulawesi</p>
-        <Link to='about-right' smooth={true} offset={-165} duration={500} className='btn bg-[#F9F7C9] text-[#1d3029]'>Start Your Journey <img src={right_arrow} alt="" /></Link>
+        <Link to='about-right' smooth={true} offset={-165} duration={500} className='btn bg-[#FEFAE0] text-[#1d3029]'>Start Your Journey <img src={right_arrow} alt="" /></Link>
       </div>
     </div>
   )

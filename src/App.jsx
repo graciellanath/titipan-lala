@@ -28,12 +28,12 @@ const App = () => {
       <div className="w-full flex justify-center flex-wrap">
         <About />
         <DateTimeWeather />
-        <Map />
         <Title />
         <Swiper />
+        <Area />
         <Title3 />
         <CulinarySwiper />
-        <Area />
+        <Map />
         <Title2 />
         <OurMember />
         <Footer />

@@ -39,7 +39,7 @@ const Map = () => {
 
   return (
     <div className="p-4 w-full flex justify-center flex-wrap">
-      <h1 className="text-2xl font-bold mb-4 w-full text-center">
+      <h1 className="text-2xl text-[#5F6F52] font-bold mb-4 w-full text-center">
         Interactive Map Of Sulawesi Tengah
       </h1>
       {error && (

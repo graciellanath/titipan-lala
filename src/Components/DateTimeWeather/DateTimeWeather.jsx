@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import './DateTimeWeather.css'; 
 
 const DateTimeWeather = () => {
   const [dateTime, setDateTime] = useState("");
@@ -53,7 +54,7 @@ const DateTimeWeather = () => {
             alt={weatherData.current.condition.text}
           />
         )}
-        <div className="w-full flex justify-center flex-col">
+        <div className="w-full flex justify-center flex-col zoom-in">
           <h1 className="text-4xl text-black font-bold w-full text-center">
             Sulawesi Tengah
           </h1>
@@ -68,7 +69,7 @@ const DateTimeWeather = () => {
             </p>
           )}
         </div>
-        <div className="w-full flex justify-center flex-col">
+        <div className="w-full flex justify-center flex-col zoom-in">
           <h1 className="text-xl text-black w-full text-center">
             It Is Currently
           </h1>

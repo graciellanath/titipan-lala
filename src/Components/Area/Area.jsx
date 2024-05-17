@@ -39,10 +39,10 @@ const Area = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {areaData.map((item, index) => (
             <div key={index} className="card">
-              <h2 className="text-xl font-semibold mb-2">{item.name[0]}</h2>
-              <h3 className="text-lg font-medium mb-2">{item.name[1]}</h3>
-              <p className="text-gray-700 mb-1">Type: {item.type.toUpperCase()}</p>
-              <p className="text-gray-700 mb-1">
+              <h2 className="text-xl text-[#FEFAE0] font-semibold mb-2">{item.name[0]}</h2>
+              <h3 className="text-lg text-[#FEFAE0] font-medium mb-2">{item.name[1]}</h3>
+              <p className="text-[#FEFAE0]-700 mb-1">Type: {item.type.toUpperCase()}</p>
+              <p className="text-[#FEFAE0]-700 mb-1">
                 Coordinates: {item.coordinate}
               </p>
             </div>
