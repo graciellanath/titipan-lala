@@ -29,7 +29,7 @@ const Area = () => {
 
   return (
     <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4 text-center text-[#5F6F52]">Areas of Sulawesi Tengah</h1>
+      <h1 className="text-2xl font-bold mb-4 text-center text-[#5F6F52]">Areas of Central Sulawesi</h1>
       {error && (
         <p className="text-red-500">
           Error fetching weather data: {error.message}
