@@ -112,7 +112,7 @@ const Culinary = () => {
             <div className="slide h-[90%] p-4">
               <div className="user-info">
                 <img src={makan9} alt="" />
-                <h3>Tinatuan</h3>
+                <h3>Tinutuan</h3>
               </div>
             </div>
           </li>

@@ -60,7 +60,7 @@ const CulinarySwiper = () => {
               </div>
 
               <h3 className="text-center text-2xl mt-2">
-                Ayam Goreng Sulawesi
+                Ayam Goreng Sulalala
               </h3>
             </div>
           </div>
