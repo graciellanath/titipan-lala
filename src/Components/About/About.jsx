@@ -15,11 +15,11 @@ const About = () => {
 
   return (
     <div 
-      className='about flex align-middle items-center justify-end flex-wrap w-full bg-[#A9B388] drop-shadow-lg shadow-[#695b30] m-6 md:my-12 md:mx-52 relative overflow-hidden rounded-2xl'
+      className='about flex align-middle items-center justify-end flex-wrap lg:flex-nowrap w-full bg-[#A9B388] drop-shadow-lg shadow-[#695b30] m-6 md:my-12 md:mx-52 relative overflow-hidden rounded-2xl'
       data-aos="fade-up" 
     >
       <div className='about-left md:w-[35%] w-full flex justify-center my-4'>
-        <img src={about_img} alt="" className='about-img md:w-full justify-center px-4 md:h-96 object-fit' />
+        <img src={about_img} alt="" className='about-img md:w-full justify-center px-4 md:h-96 object-contain' />
       </div>
       <div className='about-right md:w-[65%] w-full text-center z-10'>
         <h1 className='font-bold text-[24px] text-white'>About Central Sulawesi</h1>
